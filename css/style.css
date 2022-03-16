@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100&display=swap');
+
+
+body {
+font-family: 'Roboto', sans-serif;
+font-size: 16px;
+margin: 0; /*marges extérieur */
+
+}
+.container {
+    width: 60%;
+    /**
+    * applique des marges extérieurs sur 
+    * l'espace disponible seulement si une largeur fixe a été preciséé
+    */
+    margin:auto;
+}
+/**
+* barrre de navigation
+*/
+nav {
+     background-color: black; /*couleur de fond */
+     color: white; /* color de la police de caractéres */
+     text-transform:uppercase; /*met le texte en majuscule */
+    }
+
+
+nav .container{
+     display: flex;
+     justify-content: space-between; /* separe les eléments en utilisant l'espace disponoble */
+     align-items: center; /*centre vericalment */
+}
+/*toujours preciser la balise "a" pour effectuer des changements */
+/* l'espace reprensente "à l'intérieur de ..." */
+nav a {
+    color:white;/*Couleur de la police de caractéres */
+    text-decoration: none; /*enléve le soulignement du lien */
+    font-weight: bold; /* mettre le texte en gras */
+}
+
+
+
+    nav ul {
+    display:  flex; /* permet de disposer les elements les uns à coté des autres */
+    list-style: none; /* retir les elements décoratifs comme les points */
+    gap: 20px; /* l'ecart entre les éléments */
+}
+/**
+* header
+*/
+header {
+    background: linear-gradient(to right, #e71969, #f56306);
+    color:white;
+    text-align: center; /* alignement horizontal du texte */
+  /*  padding-top:  215px; marges intérieurs
+    padding-bottom:  215px; */
+    padding: 215px 0 215 0; /*dans l ordre : haut, droite, */
+    padding: 215px 0; /*dans l'ordre :  haut/bas et droite/gauche */
+    /* padding: 215px; */ /* les 4 cotés prennent une valeur */
+}
+header h1 {
+    font-size: 6rem;
+    margin: 0;
+}
+header h2 {
+    font-size: 4rem;
+    margin: 10 0 80px 0; /* 10px haut, 0 droite, 80pxbas, 0 gauche */
+}
+.btn {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #991e5f;
+    padding: 30px 45px; /* 30px haut et bas, 45px droite  et gauche */
+    border-radius: 100px; /* arrondis les bords */
+    letter-spacing: 0.2rem; /* espacement entre les lettres */
+    }
+    /**
+    * :hover s'enclenche dés que la souris survole l'élement
+    * attention ! pas d'espace avant et apres les ":"
+    */
+.btn:hover{
+    background-color: #ff2400;
+    transition: all 500ms; /* permet d'ajouter une transition entre les changements de valeurs */
+
+    }
+
